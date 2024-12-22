@@ -1,12 +1,12 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const TextComponent = () => {
+const CardComponent = () => {
   return (
     <View>
-      <Text>This is some random text.</Text>
+      <Text>CardComponent</Text>
     </View>
   )
 }
 
-export default TextComponent
+export default CardComponent
