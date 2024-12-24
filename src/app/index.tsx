@@ -11,11 +11,13 @@ import ViewComponent from '../components/ViewComponent'
 import ButtonComponent from '../components/ButtonComponent'
 import ImageComponent from '../components/ImageComponent'
 import CardComponent from '../components/CardComponent'
+import DynamicContent from '../components/DynamicContent'
+import CarComponent from '../components/CarComponent'
 
 const Index = () => {
   return (
     <View>
-      <CardComponent />
+      <CarComponent />
     </View>
   )
 }
