@@ -1,12 +1,11 @@
 import { View, Text } from 'react-native'
 import React from 'react'
-
-const course = 'Mathematics';
+import st from "../components/style"
 
 const Subject = () => {
   return (
-    <View>
-      <Text>I love {course} </Text>
+    <View style={st.shadowStyle}>
+      <Text>I love Maths </Text>
     </View>
   )
 }

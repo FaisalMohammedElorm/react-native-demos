@@ -1,4 +1,4 @@
-import { View, Text, Image, Button } from 'react-native'
+import { View, Text, Image, Button, Pressable, StyleSheet } from 'react-native'
 import React from 'react'
 
 const CarComponent = () => {
@@ -11,21 +11,53 @@ const CarComponent = () => {
 
   return (
     <View>
-      <Image source={require('../assets/car.jpg')}
-        style={{
-          width: imageWidth,
-          height: imageHeight,
-        }}
-      />
-      <Text>{carName}</Text>
-      <Text>{carRatings}</Text>
-      <Text>{carDescription}</Text>
-      <Text>{price}</Text>
-      <Button title='Add to Cart'/>
+      <Text style={styles.pill}>${price}</Text>
+        <Image source={require('../assets/car.jpg')}
+          style={{
+            width: imageWidth,
+            height: imageHeight,
+          }}
+        /> 
+        <Text style={styles.heading}>{carName}</Text>
+        {/* <Text>{carRatings}</Text> */}
+        <Text>{carDescription}</Text>
+        
+        {/* <Button title='Add to Cart'/> */}
+
+        <Pressable style={styles.button}>
+          <Text style={styles.buttonText}>Learn More</Text>
+        </Pressable>
     </View>
   )
 }
-
+const styles = StyleSheet.create({
+  pill:{
+    backgroundColor: 'black',
+    color: 'white',
+    paddingHorizontal: 5,
+    paddingVertical: 2,
+    marginBottom: 10,
+    width: 80,
+    marginTop: 20,
+    textAlign: 'center'
+  },
+  heading:{
+    fontSize: 20
+  },
+  button:{
+    backgroundColor: 'black',
+    paddingHorizontal: 5,
+    paddingVertical: 2,
+    borderRadius: 5,
+    marginBottom: 10,
+    textAlign: 'center',
+    width: 120 
+  },
+  buttonText:{
+    color: 'white',
+    padding: 10
+  }
+});
 export default CarComponent
 
           
