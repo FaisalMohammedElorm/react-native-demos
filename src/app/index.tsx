@@ -22,6 +22,9 @@ import Product from '../components/Product'
 import ConditionalStatement from '../components/ConditionalStatement'
 import ANDOperator from '../components/ANDOperator'
 import TernaryOperator from '../components/TernaryOperator'
+import WithoutState from '../components/1. Basic Counter/WithoutState'
+import WithState from '../components/1. Basic Counter/WithState'
+import UpdateArray from '../components/2. Update Arrays/UpdateArray'
 
 const Index = () => {
   // const products = [
@@ -75,7 +78,10 @@ const Index = () => {
     // <ConditionalStatement />
     <View>
       {/* <ANDOperator /> */}
-      <TernaryOperator />
+      {/* <TernaryOperator /> */}
+      {/* <WithoutState /> */}
+      {/* <WithState/> */}
+      <UpdateArray/>
     </View>
   )
 }
