@@ -81,7 +81,7 @@ const Index = () => {
       {/* <TernaryOperator /> */}
       {/* <WithoutState /> */}
       {/* <WithState/> */}
-      <UpdateArray/>
+      <UpdateArray />
     </View>
   )
 }
